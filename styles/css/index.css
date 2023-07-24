@@ -219,4 +219,52 @@ main .main-content-btn::after {
 main .main-content-btn:hover {
   background-color: #1C1B1B;
   color: #fff;
+}
+main .slider {
+  margin: 50px 0;
+  position: relative;
+}
+main .slider .swiper {
+  max-height: 100%;
+  width: 1115px;
+  margin: 0 auto;
+}
+main .slider .swiper-slide {
+  box-sizing: border-box;
+  height: 450px;
+  background-color: #E5E6E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  padding: 50px 50px 20px 30px;
+}
+main .slider .swiper-slide > h2 {
+  font-size: 30px;
+  line-height: 40px;
+  height: 80px;
+  color: #282828;
+}
+main .slider .swiper-slide > button {
+  width: 50%;
+}
+main .slider .swiper-slide-img-wrap {
+  align-self: center;
+  height: 60%;
+}
+main .slider .swiper-slide-img-wrap > img {
+  width: 100%;
+  height: 100%;
+}
+main .slider-button-prev, main .slider-button-next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+main .slider-button-prev {
+  left: 2%;
+}
+main .slider-button-next {
+  right: 2%;
 }/*# sourceMappingURL=index.css.map */

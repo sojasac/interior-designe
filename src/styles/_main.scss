@@ -57,4 +57,52 @@ main{
             @include mainButton();
          } 
     }
+    .slider {
+        margin: 50px 0;
+        position: relative;
+            .swiper{
+                max-height: 100%;
+                width: 1115px;
+                margin: 0 auto;
+                &-slide{
+                    box-sizing: border-box;
+                    height: 450px;
+                    background-color: #E5E6E6;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 30px;
+                    padding: 50px 50px 20px 30px;
+                    >h2{
+                        font-size: 30px;
+                        line-height: 40px;
+                        height: 80px;
+                        color: #282828;
+                    }
+                    >button{
+                        width: 50%;
+                    }
+                    &-img-wrap{
+                        align-self: center;
+                        height: 60%;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        &-button-prev, &-button-next {
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+        }
+        &-button-prev{
+            left: 2%;
+        }
+        &-button-next{
+            right: 2%;
+        }
+    }
 }
