@@ -1,0 +1,25 @@
+// Обнуление
+@import 'normolize.scss';
+// Шрифты
+@import 'fonts.scss';
+// Миксины
+@import 'mixins.scss';
+// Переменные
+@import 'variable.scss';
+
+
+// Стилизация лэндинга
+  body{
+    font-family: $mainFont;
+    color: $mainTextColor;
+  }
+  .container {
+    max-width: 1115px;
+    margin: 0 auto;
+    @include flexCenter()
+  }
+
+
+// Header
+  @import 'header.scss';
+

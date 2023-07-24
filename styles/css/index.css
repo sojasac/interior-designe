@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, li, div {
+  cursor: default;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url(../fonts/Nunito/Nunito-Regular.ttf) format("ttf"), url(../fonts/Nunito/Nunito-Regular.woff) format("woff"), url(../fonts/Nunito/Nunito-Regular.woff2) format("woff2"), url(../fonts/Nunito/Nunito-Regular.eot) format("eot");
+}
+body {
+  font-family: "Nunito", sans-serif;
+  color: #1B1A1A;
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #D3CBC5;
+  height: 80px;
+}
+header .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+header .header .navbar-content {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+header .header .navbar-content-item:hover {
+  border-bottom: 1px solid #1B1A1A;
+  margin-bottom: -1px;
+}
+header .header .navbar-content-item > a {
+  color: #1B1A1A;
+}
+header .header-activites {
+  display: flex;
+  gap: 20px;
+}
+header .header-activites .cart-btn, header .header-activites .search {
+  background-color: transparent;
+}
+header .header-activites .cart {
+  position: relative;
+}
+header .header-activites .cart-count {
+  position: absolute;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #781414;
+  color: #fff;
+  font-size: 6px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=index.css.map */
