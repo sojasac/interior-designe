@@ -1,0 +1,60 @@
+@import 'variable.scss';
+@import 'mixins.scss';
+main{
+    width: 100%;
+    .main-content{
+        background-image: url('/src/assets/img/main-content-bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        min-height: 820px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+         .container{
+            padding: 20px;
+            position: relative;
+            margin-right: 50px;
+            p {
+                font-size: 18px;
+                color: #2C314B;
+                margin-bottom: 7px;
+            }
+            h2{
+                max-width: 360px;
+                font-size: 50px;
+                line-height: 60px;
+                margin-bottom: 15px;
+            }
+            &::before{
+                content: ' ';
+                width: 292px;
+                border-bottom: 1px solid #6B6C71;
+                position: absolute;
+                top: 0;
+                left: -25px;
+            }
+            &::after{
+                content: ' ';
+                height: 230px;
+                border-left: 1px solid #6B6C71;
+                position: absolute;
+                top: -25px;
+                left: 0;
+            }
+         }
+         #main-content-price{
+            font-size: 16px;
+            color: #121211;
+            span{
+                color: $secondaryTextColor;
+                font-size: 14px;
+            }
+            margin-bottom: 20px;
+         } 
+         &-btn{
+            @include mainButton();
+         } 
+    }
+}

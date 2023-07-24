@@ -79,11 +79,9 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1115px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header {
@@ -134,4 +132,91 @@ header .header-activites .cart-count {
   align-items: center;
   top: 0;
   right: 0;
+}
+
+main {
+  width: 100%;
+}
+main .main-content {
+  background-image: url("/src/assets/img/main-content-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 820px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main .main-content .container {
+  padding: 20px;
+  position: relative;
+  margin-right: 50px;
+}
+main .main-content .container p {
+  font-size: 18px;
+  color: #2C314B;
+  margin-bottom: 7px;
+}
+main .main-content .container h2 {
+  max-width: 360px;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+main .main-content .container::before {
+  content: " ";
+  width: 292px;
+  border-bottom: 1px solid #6B6C71;
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+main .main-content .container::after {
+  content: " ";
+  height: 230px;
+  border-left: 1px solid #6B6C71;
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+main .main-content #main-content-price {
+  font-size: 16px;
+  color: #121211;
+  margin-bottom: 20px;
+}
+main .main-content #main-content-price span {
+  color: #999;
+  font-size: 14px;
+}
+main .main-content-btn {
+  padding: 7px 17px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  background-color: transparent;
+  position: relative;
+}
+main .main-content-btn::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+main .main-content-btn::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+main .main-content-btn:hover {
+  background-color: #1C1B1B;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
