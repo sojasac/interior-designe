@@ -1,0 +1,53 @@
+@import '_variable.scss';
+@import '_mixins.scss';
+header {
+    width: 100%;
+    background-color: #D3CBC5;
+    height: 80px;
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        .navbar{
+            &-content{
+                display: flex;
+                gap: 30px;
+                font-size: 16px;
+                &-item{
+                    &:hover{
+                        border-bottom: 1px solid $mainTextColor;
+                        margin-bottom: -1px;
+                    }
+                    >a {
+                        color: $mainTextColor;
+                    }
+                }
+            }
+        }
+        &-activites{
+            display: flex;
+            gap: 20px;
+            .cart-btn, .search{
+                background-color: transparent;
+            }
+            .cart{
+                position: relative;
+                &-count{
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    background-color: #781414;
+                    color: #fff;
+                    font-size: 6px;
+                    z-index: 2;
+                    @include flexCenter();
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
